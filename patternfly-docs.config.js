@@ -5,5 +5,5 @@ module.exports = {
     ...generatedSideNav
   ],
   topNavItems: [],
-  port: 8003
+  port: _PF_DOCS_PORT_OPT
 };

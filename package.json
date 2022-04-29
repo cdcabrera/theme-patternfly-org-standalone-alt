@@ -1,7 +1,7 @@
 {
   "name": "theme-patternfly-org-standalone-alt",
   "description": "A standalone wrapper for theme-patternfly-org.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Red Hat",
   "license": "MIT",
   "engines": {
@@ -30,6 +30,7 @@
     "@patternfly/react-styles": "^4.56.2",
     "@patternfly/react-table": "^4.75.1",
     "@patternfly/react-virtualized-extension": "^4.53.1",
+    "commander": "^9.2.0",
     "eslint": "^8.14.0",
     "eslint-config-esnext": "^4.1.0",
     "eslint-config-node": "^4.1.0",

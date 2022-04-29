@@ -4,11 +4,19 @@
   "version": "0.0.1",
   "author": "Red Hat",
   "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bin": {
+    "pf-docs": "./bin/cli.js"
+  },
   "scripts": {
-    "start": "theme-patternfly-org start"
+    "help": "./bin/cli.js -h",
+    "start": "./bin/cli.js start",
+    "test": "eslint ./bin ./scripts"
   },
   "dependencies": {
-    "commander": "^9.2.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/plugin-proposal-decorators": "^7.17.9",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
@@ -22,6 +30,15 @@
     "@patternfly/react-styles": "^4.56.2",
     "@patternfly/react-table": "^4.75.1",
     "@patternfly/react-virtualized-extension": "^4.53.1",
+    "eslint": "^8.14.0",
+    "eslint-config-esnext": "^4.1.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-monaco-editor": "^0.48.0",

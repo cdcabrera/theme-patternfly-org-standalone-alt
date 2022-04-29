@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = sourceMD => {
-  // Content md
-  const contentBase = path.join(__dirname, 'src');
+  const contentBase = path.join(process.cwd(), 'src');
   sourceMD(path.join(contentBase, '/**/__docs__/*.md'), 'react');
 };

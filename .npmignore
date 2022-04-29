@@ -1,0 +1,13 @@
+*
+!package.json
+!LICENSE
+!README.md
+!CHANGELOG.md
+!patternfly-*.js
+!bin/**/*.js
+!scripts/**/*.js
+scripts/**/*.archive
+!src/**/*.js
+src/**/*test.js
+src/**/*.archive
+src/**/*generated

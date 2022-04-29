@@ -6,7 +6,7 @@ Object.entries(generatedRoutes).forEach(([key]) => {
   sideNav.push({
     text,
     href: key
-  })
+  });
 });
 
 module.exports = sideNav;

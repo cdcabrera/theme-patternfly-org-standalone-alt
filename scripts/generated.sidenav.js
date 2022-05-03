@@ -1,17 +1,19 @@
-const generatedRoutes = require(require('path').join(process.cwd(), 'src/generated'));
+const generatedRoutes = require(require('path').join(_PF_DOCS_PACKAGE_PWD, 'src/generated'));
 const sideNav = [];
 const sections = [];
 
-Object.entries(generatedRoutes).forEach(([key]) => {
-  let section = key.split('/')[1];
-  section = section.charAt(0).toUpperCase() + section.slice(1);
-  !sections.includes(section) && sections.push(section);
-});
+Object.entries(generatedRoutes).forEach(([key, { section }]) => {
+  const nav = {};
+  const text = key.split('/')[1];
 
-sections.forEach(sectionName => {
-  sideNav.push({
-    section: sectionName
-  });
+  if (section && section !== '') {
+    nav.section = section;
+  } else {
+    nav.text = text.charAt(0).toUpperCase() + text.slice(1);
+    nav.href = key;
+  }
+
+  sideNav.push(nav);
 });
 
 module.exports = sideNav;

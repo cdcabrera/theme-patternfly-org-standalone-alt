@@ -1,7 +1,7 @@
 {
   "name": "theme-patternfly-org-standalone-alt",
   "description": "A standalone wrapper for theme-patternfly-org.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Red Hat",
   "license": "MIT",
   "engines": {

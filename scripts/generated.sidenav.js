@@ -6,6 +6,9 @@ Object.entries(generatedRoutes).forEach(([key, { section }]) => {
   const text = key.split('/')[1];
 
   if (section && section !== '') {
+    if (sideNav.find(({ section: cur }) => cur === section)) {
+      return;
+    }
     nav.section = section;
   } else {
     nav.text = text.charAt(0).toUpperCase() + text.slice(1);
